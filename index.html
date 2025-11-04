@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Irimaso Alfred — Portfolio</title>
+    <meta name="description" content="Irimaso Alfred — Computer scientist, educator, and technology enthusiast at Kabale University. Teaching, mentoring, and advancing digital learning." />
+    <meta name="theme-color" content="#06b6d4">
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Irimaso Alfred — Computer scientist & Educator" />
+    <meta property="og:description" content="Teaching, mentoring, and advancing digital learning at Kabale University." />
+    <meta property="og:image" content="assets/alllll.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Irimaso Alfred</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#community">Community</a>
+          <a href="#online">Online</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Irimaso Alfred</h1>
+            <p class="lead">Computer scientist • Educator • Technology enthusiast</p>
+            <p>I teach Computer Applications, Database Design, Software Engineering Fundamentals, and Networking Concepts at Kabale University. I focus on student-centered learning and using ICT to transform education and communities.</p>
+            <p class="cta-row">
+              <a class="btn" href="#contact">Get in touch</a>
+              <a class="btn ghost" href="#online">Resources</a>
+            </p>
+          </div>
+          <div class="hero-photo" aria-hidden="false">
+            <img src="assets/alllll.jpg" alt="Irimaso Alfred — profile photo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p><strong>Irimaso Alfred</strong> is a Ugandan computer scientist, educator, and technology enthusiast affiliated with Kabale University. He is active in teaching, mentoring, and advancing digital learning in higher education. He integrates modern tools and open learning platforms to improve student outcomes.</p>
+      </section>
+
+      <section id="teaching" class="section alt container">
+        <h2>Teaching</h2>
+        <ul class="teach-list">
+          <li>
+            <h3>Computer Applications</h3>
+            <p>Practical computer skills and productivity tools for students in multiple disciplines.</p>
+          </li>
+          <li>
+            <h3>Database Design</h3>
+            <p>Relational modelling, normalization, SQL, and practical design for real systems.</p>
+          </li>
+          <li>
+            <h3>Software Engineering Fundamentals</h3>
+            <p>Software lifecycle, requirements, design, testing and teamwork practices.</p>
+          </li>
+          <li>
+            <h3>Networking Concepts</h3>
+            <p>Basics of networking, protocols, and configuration for small networks.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="community" class="section container">
+        <h2>Community & Leadership</h2>
+        <p>Alfred contributes to university ICT initiatives and the ISACA Kabale University Student Chapter, promoting cybersecurity awareness and professional growth among students.</p>
+      </section>
+
+      <section id="online" class="section alt container">
+        <h2>Online Presence & Resources</h2>
+        <p>Alfred shares e-learning content on platforms such as YouTube, Scribd, and social media. His materials emphasize clarity and practical examples.</p>
+        <div class="links social-links" aria-label="Social links">
+          <a class="social" href="https://x.com/IrimasoAlfred" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">X / Twitter (@IrimasoAlfred)</span>
+          </a>
+          <a class="social" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+            <span class="sr-only">YouTube (teaching channel)</span>
+          </a>
+          <a class="social" href="#" target="_blank" rel="noopener" aria-label="Scribd">
+            <i class="fab fa-scribd" aria-hidden="true"></i>
+            <span class="sr-only">Scribd (teaching materials)</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>If you'd like to collaborate or invite Alfred to speak, please use the form or email directly.</p>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send (mailto fallback)</button>
+            <button type="button" id="theme-toggle" class="btn ghost">Toggle theme</button>
+          </div>
+        </form>
+        <p class="note">Or email: <a href="mailto:alfredirimaso@gmail.com">irimaso.alfred@example.com</a> (replace with real address)</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Irimaso Alfred — Kabale University</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- small helper: hide icon-only text visually -->
+    <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+  </body>
+</html>
